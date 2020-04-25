@@ -6,16 +6,13 @@
 #pip3 install bs4
 #pip3 install lmxl
 
-print("Hello world")
-
 import sys
 import requests
 from bs4 import BeautifulSoup
 
 #input the gene_ids of the JGI IMG/M database here:
-#gene_ids = sys.argv[1:]
+gene_ids = sys.argv[1:]
 
-gene_ids = "2651482932"
 headers = {"User-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36"}
 
 for gene_id in gene_ids:
